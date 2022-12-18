@@ -13,6 +13,10 @@
 		F80F80DD294FB3A6002EBC53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80F80DC294FB3A6002EBC53 /* Preview Assets.xcassets */; };
 		F89841A4294FB62200D40F6C /* ColoredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89841A3294FB62200D40F6C /* ColoredButton.swift */; };
 		F89841A6294FB7B900D40F6C /* ContentViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89841A5294FB7B900D40F6C /* ContentViewStore.swift */; };
+		F89841AD294FB88100D40F6C /* NumberFactLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89841A8294FB88100D40F6C /* NumberFactLoader.swift */; };
+		F89841AE294FB88100D40F6C /* RemoteNumberFactLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89841AA294FB88100D40F6C /* RemoteNumberFactLoader.swift */; };
+		F89841AF294FB88100D40F6C /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89841AB294FB88100D40F6C /* URLSessionHTTPClient.swift */; };
+		F89841B0294FB88100D40F6C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89841AC294FB88100D40F6C /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F89841A2294FB4C000D40F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F89841A3294FB62200D40F6C /* ColoredButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredButton.swift; sourceTree = "<group>"; };
 		F89841A5294FB7B900D40F6C /* ContentViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewStore.swift; sourceTree = "<group>"; };
+		F89841A8294FB88100D40F6C /* NumberFactLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFactLoader.swift; sourceTree = "<group>"; };
+		F89841AA294FB88100D40F6C /* RemoteNumberFactLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteNumberFactLoader.swift; sourceTree = "<group>"; };
+		F89841AB294FB88100D40F6C /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		F89841AC294FB88100D40F6C /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		F80F80D4294FB3A5002EBC53 /* Tcaf */ = {
 			isa = PBXGroup;
 			children = (
+				F89841A9294FB88100D40F6C /* Number Fact API */,
+				F89841A7294FB88100D40F6C /* Number Fact Feature */,
 				F80F80D5294FB3A5002EBC53 /* TcafApp.swift */,
 				F89841A5294FB7B900D40F6C /* ContentViewStore.swift */,
 				F80F80D7294FB3A5002EBC53 /* ContentView.swift */,
@@ -73,6 +83,24 @@
 				F80F80DC294FB3A6002EBC53 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F89841A7294FB88100D40F6C /* Number Fact Feature */ = {
+			isa = PBXGroup;
+			children = (
+				F89841A8294FB88100D40F6C /* NumberFactLoader.swift */,
+			);
+			path = "Number Fact Feature";
+			sourceTree = "<group>";
+		};
+		F89841A9294FB88100D40F6C /* Number Fact API */ = {
+			isa = PBXGroup;
+			children = (
+				F89841AA294FB88100D40F6C /* RemoteNumberFactLoader.swift */,
+				F89841AB294FB88100D40F6C /* URLSessionHTTPClient.swift */,
+				F89841AC294FB88100D40F6C /* HTTPClient.swift */,
+			);
+			path = "Number Fact API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89841AF294FB88100D40F6C /* URLSessionHTTPClient.swift in Sources */,
 				F89841A6294FB7B900D40F6C /* ContentViewStore.swift in Sources */,
+				F89841B0294FB88100D40F6C /* HTTPClient.swift in Sources */,
+				F89841AE294FB88100D40F6C /* RemoteNumberFactLoader.swift in Sources */,
+				F89841AD294FB88100D40F6C /* NumberFactLoader.swift in Sources */,
 				F80F80D8294FB3A5002EBC53 /* ContentView.swift in Sources */,
 				F80F80D6294FB3A5002EBC53 /* TcafApp.swift in Sources */,
 				F89841A4294FB62200D40F6C /* ColoredButton.swift in Sources */,
