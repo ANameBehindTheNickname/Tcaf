@@ -1,6 +1,6 @@
 //
 //
-//  Copyright © 2022 ANameBehindTheNickname. All rights reserved.
+//  Copyright © 2022 Vitalii Kravets. All rights reserved.
 //
 
 import SwiftUI
