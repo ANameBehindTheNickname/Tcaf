@@ -7,9 +7,11 @@ import SwiftUI
 
 @main
 struct TcafApp: App {
+    @State var store = ContentViewStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: $store)
         }
     }
 }
