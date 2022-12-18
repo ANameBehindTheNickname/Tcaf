@@ -12,6 +12,7 @@
 		F80F80DA294FB3A6002EBC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80F80D9294FB3A6002EBC53 /* Assets.xcassets */; };
 		F80F80DD294FB3A6002EBC53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80F80DC294FB3A6002EBC53 /* Preview Assets.xcassets */; };
 		F89841A4294FB62200D40F6C /* ColoredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89841A3294FB62200D40F6C /* ColoredButton.swift */; };
+		F89841A6294FB7B900D40F6C /* ContentViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89841A5294FB7B900D40F6C /* ContentViewStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F80F80DC294FB3A6002EBC53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F89841A2294FB4C000D40F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F89841A3294FB62200D40F6C /* ColoredButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredButton.swift; sourceTree = "<group>"; };
+		F89841A5294FB7B900D40F6C /* ContentViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F80F80D5294FB3A5002EBC53 /* TcafApp.swift */,
+				F89841A5294FB7B900D40F6C /* ContentViewStore.swift */,
 				F80F80D7294FB3A5002EBC53 /* ContentView.swift */,
 				F89841A3294FB62200D40F6C /* ColoredButton.swift */,
 				F80F80D9294FB3A6002EBC53 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89841A6294FB7B900D40F6C /* ContentViewStore.swift in Sources */,
 				F80F80D8294FB3A5002EBC53 /* ContentView.swift in Sources */,
 				F80F80D6294FB3A5002EBC53 /* TcafApp.swift in Sources */,
 				F89841A4294FB62200D40F6C /* ColoredButton.swift in Sources */,

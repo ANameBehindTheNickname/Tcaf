@@ -6,12 +6,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var text = ""
-    private let placeholder = "Enter a number"
+    @Binding var store: ContentViewStore
     
     var body: some View {
         VStack {
-            TextField(placeholder, text: $text)
+            TextField(store.placeholder, text: $store.text)
                 .keyboardType(.numberPad)
                 .padding()
             
@@ -21,19 +20,19 @@ struct ContentView: View {
             ColoredButton(
                 title: "Get fact",
                 color: .green,
-                action: { /* TODO: - add action */ }
+                action: store.getNumberFact
             )
             .buttonStyle(.plain)
+            .disabled(!store.canGetNumberFact)
             
             ColoredButton(
                 title: "Get random fact",
                 color: .blue,
-                action: { /* TODO: - add action */ }
+                action: store.getRandomNumberFact
             )
             
             ScrollView {
-                // TODO: -
-                Text("Number fact will be displayed here")
+                Text(store.numberFact)
             }
             
             Spacer()
@@ -44,6 +43,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(store: .constant(.init()))
     }
 }
